@@ -23,11 +23,9 @@
 
     <nav class="tab-dock" id="cardapio" role="tablist" aria-label="Categorias do cardápio">
       <button class="tab is-active" id="tab-self-service" type="button" role="tab" aria-selected="true" aria-controls="panel-self-service" data-theme="self-service"><span>01</span><b>Self-Service</b></button>
-      <button class="tab" id="tab-mineira" type="button" role="tab" aria-selected="false" aria-controls="panel-mineira" data-theme="mineira"><span>02</span><b>Mineira</b></button>
-      <button class="tab" id="tab-nordestina" type="button" role="tab" aria-selected="false" aria-controls="panel-nordestina" data-theme="nordestina"><span>03</span><b>Nordestina</b></button>
-      <button class="tab" id="tab-bebidas" type="button" role="tab" aria-selected="false" aria-controls="panel-bebidas" data-theme="bebidas"><span>04</span><b>Bebidas</b></button>
-      <button class="tab" id="tab-sobremesas" type="button" role="tab" aria-selected="false" aria-controls="panel-sobremesas" data-theme="sobremesas"><span>05</span><b>Sobremesas</b></button>
-      <button class="tab" id="tab-info" type="button" role="tab" aria-selected="false" aria-controls="panel-info" data-theme="info"><span>06</span><b>Info</b></button>
+      <button class="tab" id="tab-bebidas" type="button" role="tab" aria-selected="false" aria-controls="panel-bebidas" data-theme="bebidas"><span>02</span><b>Bebidas</b></button>
+      <button class="tab" id="tab-sobremesas" type="button" role="tab" aria-selected="false" aria-controls="panel-sobremesas" data-theme="sobremesas"><span>03</span><b>Sobremesas</b></button>
+      <button class="tab" id="tab-info" type="button" role="tab" aria-selected="false" aria-controls="panel-info" data-theme="info"><span>04</span><b>Info</b></button>
     </nav>
 
     <section class="menu-status" aria-label="Resumo do cardápio">
@@ -58,6 +56,8 @@
           <button class="subtab" type="button" data-target="buffet-guarnicoes">Guarnições</button>
           <button class="subtab" type="button" data-target="buffet-saladas">Saladas</button>
           <button class="subtab" type="button" data-target="buffet-acompanhamentos">Acompanhamentos</button>
+          <button class="subtab" type="button" data-target="self-mineira">Mineira</button>
+          <button class="subtab" type="button" data-target="self-nordestina">Nordestina</button>
         </div>
 
         <div class="subpanel is-active" id="buffet-proteinas">
@@ -198,78 +198,66 @@
             <article class="menu-item"><div><span>Extra</span><h3>Ovo frito</h3><p>Clássico de self-service para finalizar o prato.</p></div><strong>Consulte</strong></article>
           </div>
         </div>
-      </section>
 
-      <section class="panel" id="panel-mineira" role="tabpanel" aria-labelledby="tab-mineira" hidden>
-        <div class="section-head">
-          <span>Comida mineira</span>
-          <h2>Clássicos de Minas</h2>
-          <p>Itens prováveis e tradicionais da cozinha mineira, organizados para validar com a casa antes da versão final.</p>
-        </div>
+        <div class="subpanel" id="self-mineira" hidden>
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Categorias mineiras">
+            <button class="subtab is-active" type="button" data-target="mineira-panela">Panela</button>
+            <button class="subtab" type="button" data-target="mineira-porco">Porco</button>
+            <button class="subtab" type="button" data-target="mineira-milho">Milho e Feijão</button>
+          </div>
 
-        <div class="subtabs" role="tablist" aria-label="Categorias mineiras">
-          <button class="subtab is-active" type="button" data-target="mineira-panela">Panela</button>
-          <button class="subtab" type="button" data-target="mineira-porco">Porco</button>
-          <button class="subtab" type="button" data-target="mineira-milho">Milho e Feijão</button>
-        </div>
+          <div class="subpanel is-active" id="mineira-panela">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Panela</span><h3>Frango com quiabo</h3><p>Um dos pratos mais reconhecidos da culinária mineira.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Roça</span><h3>Vaca atolada</h3><p>Carne cozida com mandioca, em preparo encorpado.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Caseiro</span><h3>Carne de panela</h3><p>Molho de panela e tempero de almoço familiar.</p></div><strong>Buffet</strong></article>
+            </div>
+          </div>
 
-        <div class="subpanel is-active" id="mineira-panela">
-          <div class="menu-list">
-            <article class="menu-item"><div><span>Panela</span><h3>Frango com quiabo</h3><p>Um dos pratos mais reconhecidos da culinária mineira.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Roça</span><h3>Vaca atolada</h3><p>Carne cozida com mandioca, em preparo encorpado.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Caseiro</span><h3>Carne de panela</h3><p>Molho de panela e tempero de almoço familiar.</p></div><strong>Buffet</strong></article>
+          <div class="subpanel" id="mineira-porco" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Suíno</span><h3>Leitão à pururuca</h3><p>Clássico crocante para dias especiais.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Crocante</span><h3>Torresmo</h3><p>Presença obrigatória para o espírito mineiro do buffet.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Suíno</span><h3>Costelinha</h3><p>Combina com tutu, couve e arroz branco.</p></div><strong>Buffet</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="mineira-milho" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Feijão</span><h3>Tutu à mineira</h3><p>Feijão engrossado, servido com guarnições clássicas.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Feijão</span><h3>Feijão tropeiro</h3><p>Mistura de feijão, farinha, ovos e temperos.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Milho</span><h3>Angu</h3><p>Base cremosa para pratos com molho.</p></div><strong>Buffet</strong></article>
+            </div>
           </div>
         </div>
 
-        <div class="subpanel" id="mineira-porco" hidden>
-          <div class="menu-list">
-            <article class="menu-item"><div><span>Suíno</span><h3>Leitão à pururuca</h3><p>Clássico crocante para dias especiais.</p></div><strong>Consulte</strong></article>
-            <article class="menu-item"><div><span>Crocante</span><h3>Torresmo</h3><p>Presença obrigatória para o espírito mineiro do buffet.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Suíno</span><h3>Costelinha</h3><p>Combina com tutu, couve e arroz branco.</p></div><strong>Buffet</strong></article>
+        <div class="subpanel" id="self-nordestina" hidden>
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Categorias nordestinas">
+            <button class="subtab is-active" type="button" data-target="nordeste-carnes">Carnes</button>
+            <button class="subtab" type="button" data-target="nordeste-bases">Bases</button>
+            <button class="subtab" type="button" data-target="nordeste-acompanhamentos">Acompanhamentos</button>
           </div>
-        </div>
 
-        <div class="subpanel" id="mineira-milho" hidden>
-          <div class="menu-list">
-            <article class="menu-item"><div><span>Feijão</span><h3>Tutu à mineira</h3><p>Feijão engrossado, servido com guarnições clássicas.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Feijão</span><h3>Feijão tropeiro</h3><p>Mistura de feijão, farinha, ovos e temperos.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Milho</span><h3>Angu</h3><p>Base cremosa para pratos com molho.</p></div><strong>Buffet</strong></article>
+          <div class="subpanel is-active" id="nordeste-carnes">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Regional</span><h3>Carne de sol acebolada</h3><p>Item nordestino para acompanhar macaxeira, feijão e farofa.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Panela</span><h3>Charque desfiada</h3><p>Boa para compor pratos com arroz, baião e saladas.</p></div><strong>Consulte</strong></article>
+            </div>
           </div>
-        </div>
-      </section>
 
-      <section class="panel" id="panel-nordestina" role="tabpanel" aria-labelledby="tab-nordestina" hidden>
-        <div class="section-head">
-          <span>Regional nordestina</span>
-          <h2>Raízes do Nordeste</h2>
-          <p>Complemento regional para aproximar a comida mineira do almoço recifense.</p>
-        </div>
-
-        <div class="subtabs" role="tablist" aria-label="Categorias nordestinas">
-          <button class="subtab is-active" type="button" data-target="nordeste-carnes">Carnes</button>
-          <button class="subtab" type="button" data-target="nordeste-bases">Bases</button>
-          <button class="subtab" type="button" data-target="nordeste-acompanhamentos">Acompanhamentos</button>
-        </div>
-
-        <div class="subpanel is-active" id="nordeste-carnes">
-          <div class="menu-list">
-            <article class="menu-item"><div><span>Regional</span><h3>Carne de sol acebolada</h3><p>Item nordestino para acompanhar macaxeira, feijão e farofa.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Panela</span><h3>Charque desfiada</h3><p>Boa para compor pratos com arroz, baião e saladas.</p></div><strong>Consulte</strong></article>
+          <div class="subpanel" id="nordeste-bases" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Milho</span><h3>Cuscuz nordestino</h3><p>Base regional para carnes e ovos.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Raiz</span><h3>Macaxeira cozida</h3><p>Clássico para pratos com carne de sol e manteiga de garrafa.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Base</span><h3>Baião de dois</h3><p>Arroz e feijão em preparo regional.</p></div><strong>Buffet</strong></article>
+            </div>
           </div>
-        </div>
 
-        <div class="subpanel" id="nordeste-bases" hidden>
-          <div class="menu-list">
-            <article class="menu-item"><div><span>Milho</span><h3>Cuscuz nordestino</h3><p>Base regional para carnes e ovos.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Raiz</span><h3>Macaxeira cozida</h3><p>Clássico para pratos com carne de sol e manteiga de garrafa.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Base</span><h3>Baião de dois</h3><p>Arroz e feijão em preparo regional.</p></div><strong>Buffet</strong></article>
-          </div>
-        </div>
-
-        <div class="subpanel" id="nordeste-acompanhamentos" hidden>
-          <div class="menu-list">
-            <article class="menu-item"><div><span>Farinha</span><h3>Farofa</h3><p>Acompanhamento para pratos mineiros e nordestinos.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Molho</span><h3>Vinagrete</h3><p>Finaliza carnes, macaxeira e baião de dois.</p></div><strong>Buffet</strong></article>
+          <div class="subpanel" id="nordeste-acompanhamentos" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Farinha</span><h3>Farofa</h3><p>Acompanhamento para pratos mineiros e nordestinos.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Molho</span><h3>Vinagrete</h3><p>Finaliza carnes, macaxeira e baião de dois.</p></div><strong>Buffet</strong></article>
+            </div>
           </div>
         </div>
       </section>
@@ -278,12 +266,13 @@
         <div class="section-head">
           <span>Bebidas</span>
           <h2>Para acompanhar</h2>
-          <p>Bebidas simples de almoço, sucos e opções para fechar a refeição.</p>
+          <p>Bebidas simples de almoço, sucos, cervejas e doses para acompanhar a refeição.</p>
         </div>
 
         <div class="subtabs" role="tablist" aria-label="Categorias de bebidas">
           <button class="subtab is-active" type="button" data-target="bebidas-sucos">Sucos</button>
           <button class="subtab" type="button" data-target="bebidas-frias">Frias</button>
+          <button class="subtab" type="button" data-target="bebidas-alcoolicas">Alcoólicas</button>
           <button class="subtab" type="button" data-target="bebidas-cafe">Café</button>
         </div>
 
@@ -299,6 +288,35 @@
           <div class="menu-list">
             <article class="menu-item"><div><span>Água</span><h3>Água mineral</h3><p>Com ou sem gás.</p></div><strong>Consulte</strong></article>
             <article class="menu-item"><div><span>Clássico</span><h3>Refrigerantes</h3><p>Opções tradicionais.</p></div><strong>Consulte</strong></article>
+          </div>
+        </div>
+
+        <div class="subpanel" id="bebidas-alcoolicas" hidden>
+          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de bebidas alcoólicas">
+            <button class="subtab is-active" type="button" data-target="alcoolicas-cervejas">Cervejas</button>
+            <button class="subtab" type="button" data-target="alcoolicas-doses">Doses</button>
+            <button class="subtab" type="button" data-target="alcoolicas-caipirinhas">Caipirinhas</button>
+          </div>
+
+          <div class="subpanel is-active" id="alcoolicas-cervejas">
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Garrafa</span><h3>Cerveja long neck</h3><p>Rótulos tradicionais conforme disponibilidade da casa.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Lata</span><h3>Cerveja lata</h3><p>Opção gelada para acompanhar almoço regional.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="alcoolicas-doses" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Brasil</span><h3>Cachaça</h3><p>Dose para combinar com torresmo, carne de sol e comida de panela.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Clássico</span><h3>Whisky</h3><p>Rótulos conforme disponibilidade.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="alcoolicas-caipirinhas" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Limão</span><h3>Caipirinha tradicional</h3><p>Clássica de limão com cachaça.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Frutas</span><h3>Caipifruta</h3><p>Sabores de frutas conforme disponibilidade do dia.</p></div><strong>Consulte</strong></article>
+            </div>
           </div>
         </div>
 
@@ -363,8 +381,17 @@
     </div>
 
     <footer class="menu-footer">
-      <span class="footer-mark">Ô Mineiro</span>
-      <p>Ô Mineiro Restaurante</p>
+      <div class="product-badge" aria-label="Um produto QrStack">
+        <div class="qrstack-lockup">
+          <span class="product-copy">Um produto</span>
+          <img class="qrstack-mark" src="assets/qrstack-mark.png" alt="" aria-hidden="true">
+        </div>
+        <img class="qrstack-wordmark" src="assets/qrstack-wordmark.png" alt="QrStack">
+      </div>
+      <div class="footer-brand">
+        <span class="footer-mark">Ô Mineiro</span>
+        <span>Self-service regional · Recife</span>
+      </div>
     </footer>
   </main>
 
