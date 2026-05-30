@@ -304,6 +304,11 @@ p { margin: 0; }
   overflow: visible;
 }
 
+.subtabs--featured {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
 .subtabs--nested {
   gap: 6px;
   margin: 2px 0 14px;
@@ -324,6 +329,19 @@ p { margin: 0; }
   background: transparent;
   border: 1px solid var(--line);
   border-radius: 8px;
+}
+
+.subtabs--featured .subtab--major {
+  grid-column: span 3;
+  min-height: 72px;
+  font-size: .94rem;
+}
+
+.subtabs--featured .subtab--minor {
+  grid-column: span 2;
+  min-height: 42px;
+  padding-block: 7px;
+  font-size: .68rem;
 }
 
 .subtabs--nested .subtab {
@@ -521,6 +539,15 @@ p { margin: 0; }
   .stamp {
     width: 112px;
   }
+
+  .subtabs--featured {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .subtabs--featured .subtab--major,
+  .subtabs--featured .subtab--minor {
+    grid-column: span 1;
+  }
 }
 
 @media (max-width: 560px) {
@@ -537,6 +564,16 @@ p { margin: 0; }
 
   .tab {
     min-height: 58px;
+  }
+
+  .subtabs--featured .subtab--major {
+    min-height: 64px;
+    font-size: .86rem;
+  }
+
+  .subtabs--featured .subtab--minor {
+    min-height: 40px;
+    font-size: .62rem;
   }
 
   .menu-item {
