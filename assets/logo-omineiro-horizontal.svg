@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-120 0 1640 560" role="img" aria-labelledby="title desc">
+  <title id="title">Ô Mineiro Restaurante</title>
+  <desc id="desc">Marca horizontal reformulada do Ô Mineiro, sem moldura circular.</desc>
+  <defs>
+    <filter id="soft-shadow" x="-8%" y="-14%" width="116%" height="132%">
+      <feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#220804" flood-opacity=".32"/>
+    </filter>
+    <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff7a5"/>
+      <stop offset=".58" stop-color="#fff079"/>
+      <stop offset="1" stop-color="#f4d65d"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ed0707"/>
+      <stop offset="1" stop-color="#a91512"/>
+    </linearGradient>
+    <radialGradient id="screw" cx=".35" cy=".28" r=".72">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".34" stop-color="#bfc0bd"/>
+      <stop offset=".72" stop-color="#777977"/>
+      <stop offset="1" stop-color="#3f4141"/>
+    </radialGradient>
+  </defs>
+
+  <g filter="url(#soft-shadow)">
+    <path d="M700 24 846 300H554Z" fill="url(#red)"/>
+    <path d="M394 455h612l-72 82H466Z" fill="url(#red)"/>
+
+    <path d="M76 218
+      C106 172 175 170 252 168
+      C398 164 516 142 700 142
+      C884 142 1002 164 1148 168
+      C1225 170 1294 172 1324 218
+      L1324 334
+      C1295 378 1227 380 1151 382
+      C1000 386 881 416 700 416
+      C519 416 400 386 249 382
+      C173 380 105 378 76 334Z"
+      fill="#a00f0d"/>
+
+    <path d="M98 230
+      C126 194 188 194 260 191
+      C408 187 525 165 700 165
+      C875 165 992 187 1140 191
+      C1212 194 1274 194 1302 230
+      L1302 323
+      C1275 357 1213 358 1142 360
+      C990 365 873 393 700 393
+      C527 393 410 365 258 360
+      C187 358 125 357 98 323Z"
+      fill="#6e120e"/>
+
+    <path d="M116 240
+      C142 210 198 209 265 207
+      C415 202 530 183 700 183
+      C870 183 985 202 1135 207
+      C1202 209 1258 210 1284 240
+      L1284 314
+      C1258 344 1201 344 1134 347
+      C984 352 869 374 700 374
+      C531 374 416 352 266 347
+      C199 344 142 344 116 314Z"
+      fill="url(#plate)"/>
+
+    <circle cx="106" cy="276" r="35" fill="#f6e87c"/>
+    <circle cx="106" cy="276" r="23" fill="url(#screw)"/>
+    <path d="M93 263 119 289M119 263 93 289" stroke="#6a6a68" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="1294" cy="276" r="35" fill="#f6e87c"/>
+    <circle cx="1294" cy="276" r="23" fill="url(#screw)"/>
+    <path d="M1281 263 1307 289M1307 263 1281 289" stroke="#6a6a68" stroke-width="7" stroke-linecap="round"/>
+
+    <text x="700" y="236" text-anchor="middle"
+      font-family="Georgia, 'Times New Roman', serif"
+      font-size="34" font-weight="700"
+      fill="#8a5b28">RESTAURANTE</text>
+
+    <text x="700" y="336" text-anchor="middle"
+      font-family="Georgia, 'Times New Roman', serif"
+      font-size="152" font-weight="900"
+      letter-spacing="3"
+      fill="#e20707"
+      stroke="#be140f"
+      stroke-width="2">Ô MINEIRO</text>
+
+    <path d="M560 391h280l36 34-36 34H560l-36-34Z" fill="#d91515" stroke="#fff5ca" stroke-width="11"/>
+    <path d="M577 405h246l20 20-20 20H577l-20-20Z" fill="#c71917"/>
+    <circle cx="561" cy="425" r="8" fill="#fff5ca"/>
+    <circle cx="839" cy="425" r="8" fill="#fff5ca"/>
+    <text x="700" y="438" text-anchor="middle"
+      font-family="Georgia, 'Times New Roman', serif"
+      font-size="38" font-weight="900"
+      fill="#fff5ca">DESDE 1996</text>
+  </g>
+</svg>

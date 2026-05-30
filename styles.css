@@ -92,10 +92,10 @@ p { margin: 0; }
   isolation: isolate;
   text-align: center;
   background:
-    linear-gradient(90deg, rgba(255, 246, 211, .08) 9px, transparent 9px) 0 0 / 92px 42px,
-    linear-gradient(90deg, rgba(255, 246, 211, .08) 9px, transparent 9px) 46px 21px / 92px 42px,
-    linear-gradient(rgba(255, 246, 211, .11) 4px, transparent 4px) 0 0 / 92px 42px,
-    linear-gradient(90deg, #5f1010, #7d1714 48%, #4b0d0c);
+    linear-gradient(180deg, rgba(24, 8, 6, .08), rgba(33, 8, 6, .42) 64%, rgba(27, 6, 5, .9)),
+    linear-gradient(90deg, rgba(18, 8, 8, .34), transparent 30%, transparent 70%, rgba(18, 8, 8, .34)),
+    url("assets/brick-pattern.svg") center / 176px 76px repeat,
+    #6d1214;
   border-bottom: 1px solid rgba(255, 224, 111, .22);
 }
 
@@ -109,9 +109,9 @@ p { margin: 0; }
 
 .cover::before {
   background:
-    radial-gradient(circle at 50% 42%, rgba(255, 214, 85, .16), transparent 22rem),
-    linear-gradient(180deg, rgba(18, 14, 15, .28), rgba(66, 16, 12, .54) 58%, rgba(41, 9, 7, .94)),
-    linear-gradient(90deg, rgba(12, 10, 12, .7), rgba(52, 12, 8, .16), rgba(12, 10, 12, .7));
+    radial-gradient(circle at 50% 44%, rgba(255, 214, 85, .12), transparent 24rem),
+    linear-gradient(180deg, rgba(18, 10, 8, .12), rgba(66, 16, 12, .26) 58%, rgba(41, 9, 7, .86)),
+    linear-gradient(90deg, rgba(12, 10, 12, .38), rgba(52, 12, 8, .08), rgba(12, 10, 12, .38));
 }
 
 .cover::after {
@@ -132,8 +132,9 @@ p { margin: 0; }
 
 .brand-logo {
   display: block;
-  width: min(760px, calc(100vw - 56px));
-  max-height: 74svh;
+  width: calc(100vw - 48px);
+  max-width: 980px;
+  max-height: 58svh;
   object-fit: contain;
   filter: drop-shadow(0 22px 34px rgba(23, 6, 4, .42));
 }
@@ -437,8 +438,7 @@ p { margin: 0; }
 }
 
 .menu-footer img {
-  width: 76px;
-  aspect-ratio: 1;
+  width: 132px;
   object-fit: contain;
   filter: drop-shadow(0 8px 18px rgba(33, 10, 4, .26));
 }
@@ -458,8 +458,9 @@ p { margin: 0; }
   }
 
   .brand-logo {
-    width: min(560px, calc(100vw - 34px));
-    max-height: 70svh;
+    width: calc(100vw - 28px);
+    max-width: 760px;
+    max-height: 56svh;
   }
 
   .tab-dock {
@@ -483,10 +484,10 @@ p { margin: 0; }
 
 @media (max-width: 560px) {
   .brand-logo {
-    width: min(360px, calc(100vw - 28px));
-    max-height: 66svh;
+    width: calc(100vw - 72px);
+    max-width: 520px;
+    max-height: 54svh;
     margin-bottom: 20px;
-    transform: translateX(-44px);
   }
 
   .menu-word {
