@@ -24,6 +24,10 @@ body[data-theme="info"] { --accent: #84251b; --accent-2: #e0a02f; }
 
 * { box-sizing: border-box; }
 
+*,
+*::before,
+*::after { min-width: 0; }
+
 html { scroll-behavior: smooth; }
 
 html,
@@ -61,6 +65,12 @@ h1,
 h2,
 h3,
 p { margin: 0; }
+
+h1,
+h2,
+h3,
+p,
+button { overflow-wrap: anywhere; }
 
 .sr-only {
   position: absolute;
@@ -306,7 +316,9 @@ p { margin: 0; }
 
 .subtabs--featured {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 .subtabs--nested {
@@ -319,20 +331,25 @@ p { margin: 0; }
 }
 
 .subtab {
+  display: grid;
+  place-items: center;
   flex: 1 1 136px;
   min-height: 48px;
   padding: 8px 12px;
   color: var(--accent);
   font-size: .78rem;
   font-weight: 800;
+  line-height: 1.12;
+  text-align: center;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
   background: transparent;
   border: 1px solid var(--line);
   border-radius: 8px;
 }
 
 .subtabs--featured .subtab--major {
-  grid-column: span 3;
+  grid-column: span 5;
   min-height: 72px;
   font-size: .94rem;
 }
@@ -342,6 +359,10 @@ p { margin: 0; }
   min-height: 42px;
   padding-block: 7px;
   font-size: .68rem;
+}
+
+.subtabs--featured + .subpanel {
+  margin-top: 14px;
 }
 
 .subtabs--nested .subtab {
@@ -544,13 +565,31 @@ p { margin: 0; }
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .subtabs--featured .subtab--major,
+  .subtabs--featured .subtab--major {
+    grid-column: span 1;
+  }
+
   .subtabs--featured .subtab--minor {
     grid-column: span 1;
   }
 }
 
 @media (max-width: 560px) {
+  .menu-shell {
+    padding-inline: 0;
+  }
+
+  .cover {
+    margin-inline: 0;
+  }
+
+  .tab-dock,
+  .menu-status,
+  .panel {
+    width: calc(100% - 24px);
+    max-width: 100%;
+  }
+
   .hero-art {
     width: min(340px, calc(100vw - 24px));
     max-height: none;
@@ -566,14 +605,21 @@ p { margin: 0; }
     min-height: 58px;
   }
 
+  .subtabs--featured {
+    grid-template-columns: 1fr;
+  }
+
   .subtabs--featured .subtab--major {
+    grid-column: 1;
     min-height: 64px;
     font-size: .86rem;
   }
 
   .subtabs--featured .subtab--minor {
+    grid-column: 1;
     min-height: 40px;
-    font-size: .62rem;
+    padding-inline: 6px;
+    font-size: .58rem;
   }
 
   .menu-item {
