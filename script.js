@@ -3,7 +3,7 @@ const tabs = Array.from(document.querySelectorAll('.tab-dock [role="tab"]'));
 const panels = Array.from(document.querySelectorAll('.tab-panels > [role="tabpanel"]'));
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-document.querySelectorAll('.cover-media img').forEach((img) => {
+document.querySelectorAll('.menu-footer img').forEach((img) => {
   img.loading = 'lazy';
   img.decoding = 'async';
 });
