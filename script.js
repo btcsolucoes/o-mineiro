@@ -49,7 +49,7 @@ tabs.forEach((tab) => {
 });
 
 document.querySelectorAll('.subtabs').forEach((group) => {
-  const scopedTabs = Array.from(group.querySelectorAll('.subtab'));
+  const scopedTabs = Array.from(group.children).filter((child) => child.classList.contains('subtab'));
   const scopedPanels = scopedTabs
     .map((tab) => document.getElementById(tab.dataset.target))
     .filter(Boolean);

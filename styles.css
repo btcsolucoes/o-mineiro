@@ -87,19 +87,18 @@ p { margin: 0; }
   width: 100vw;
   min-height: 94svh;
   margin-inline: calc(50% - 50vw);
-  padding: 36px max(22px, calc((100vw - 1080px) / 2 + 22px)) 32px;
+  padding: 36px 0 32px;
   overflow: hidden;
   isolation: isolate;
   text-align: center;
   background:
-    linear-gradient(180deg, rgba(28, 6, 5, .18), rgba(38, 8, 6, .48) 68%, rgba(27, 6, 5, .92)),
-    radial-gradient(circle at 50% 34%, rgba(255, 214, 85, .08), transparent 34rem),
+    linear-gradient(180deg, rgba(32, 5, 4, .18), rgba(30, 5, 4, .22) 56%, rgba(27, 6, 5, .86)),
+    linear-gradient(90deg, rgba(20, 4, 4, .2), transparent 22%, transparent 78%, rgba(20, 4, 4, .2)),
+    url("assets/hero-brick-bg.png") center / clamp(105px, 26.9vw, 323px) auto repeat,
     #4a0d0c;
-  border-bottom: 1px solid rgba(255, 224, 111, .22);
 }
 
-.cover::before,
-.cover::after {
+.cover::before {
   position: absolute;
   inset: 0;
   z-index: -1;
@@ -108,32 +107,25 @@ p { margin: 0; }
 
 .cover::before {
   background:
-    linear-gradient(180deg, rgba(18, 10, 8, .05), rgba(41, 9, 7, .72)),
+    linear-gradient(180deg, rgba(18, 10, 8, .05), rgba(41, 9, 7, .5)),
     linear-gradient(90deg, rgba(12, 10, 12, .34), transparent 28%, transparent 72%, rgba(12, 10, 12, .34));
-}
-
-.cover::after {
-  inset: 18px;
-  border: 1px solid rgba(255, 231, 155, .38);
-  box-shadow: inset 0 -120px 150px rgba(73, 22, 11, .38);
 }
 
 .cover-content {
   display: grid;
   justify-items: center;
   gap: 18px;
-  width: 100%;
+  width: 100vw;
   color: var(--cream);
 }
 
 .hero-art {
   display: block;
-  width: min(1100px, calc(100vw - 32px));
-  max-width: 100%;
+  width: min(1040px, calc(100vw - 32px));
+  max-width: none;
   height: auto;
   max-height: none;
   object-fit: contain;
-  filter: drop-shadow(0 22px 34px rgba(23, 6, 4, .42));
 }
 
 .menu-word,
@@ -165,16 +157,15 @@ p { margin: 0; }
 }
 
 .tab-dock {
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 5;
   display: grid;
-  grid-auto-columns: minmax(138px, 1fr);
-  grid-auto-flow: column;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 8px;
-  margin: -34px 0 0;
+  width: min(960px, 100%);
+  margin: 14px auto 0;
   padding: 10px;
-  overflow-x: auto;
+  overflow: visible;
   background: rgba(61, 16, 10, .94);
   border: 1px solid rgba(255, 228, 143, .2);
   box-shadow: 0 14px 30px rgba(31, 10, 5, .25);
@@ -219,12 +210,12 @@ p { margin: 0; }
 
 .menu-status {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   justify-content: center;
   width: min(960px, 100%);
   margin: 16px auto 0;
-  overflow-x: auto;
-  scrollbar-width: none;
+  overflow: visible;
 }
 
 .menu-status span {
@@ -312,17 +303,14 @@ p { margin: 0; }
 }
 
 .subtabs {
-  display: grid;
-  grid-auto-columns: minmax(112px, 1fr);
-  grid-auto-flow: column;
+  display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin: 0 0 18px;
-  overflow-x: auto;
-  scrollbar-width: none;
+  overflow: visible;
 }
 
 .subtabs--nested {
-  grid-auto-columns: minmax(96px, max-content);
   gap: 6px;
   margin: 2px 0 14px;
   padding: 8px;
@@ -332,6 +320,7 @@ p { margin: 0; }
 }
 
 .subtab {
+  flex: 1 1 136px;
   min-height: 48px;
   padding: 8px 12px;
   color: var(--accent);
@@ -344,6 +333,7 @@ p { margin: 0; }
 }
 
 .subtabs--nested .subtab {
+  flex: 0 1 auto;
   min-height: 38px;
   font-size: .72rem;
   background: rgba(255, 248, 225, .58);
@@ -514,16 +504,16 @@ p { margin: 0; }
   .cover {
     min-height: 92svh;
     margin-inline: -12px;
-    padding-inline: 12px;
+    padding-inline: 0;
   }
 
   .hero-art {
-    width: calc(100vw - 24px);
+    width: min(760px, calc(100vw - 24px));
   }
 
   .tab-dock {
-    margin-top: -32px;
-    grid-auto-columns: minmax(128px, 42vw);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 12px;
   }
 
   .panel {
@@ -542,7 +532,7 @@ p { margin: 0; }
 
 @media (max-width: 560px) {
   .hero-art {
-    width: 300px;
+    width: min(340px, calc(100vw - 36px));
     max-height: none;
     margin-bottom: 20px;
   }
@@ -596,7 +586,7 @@ p { margin: 0; }
 
 @media (max-width: 380px) {
   .tab-dock {
-    grid-auto-columns: minmax(116px, 50vw);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .section-head h2,
