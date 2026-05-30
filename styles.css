@@ -91,22 +91,11 @@ p { margin: 0; }
   overflow: hidden;
   isolation: isolate;
   text-align: center;
-  background:
-    linear-gradient(180deg, rgba(32, 5, 4, .2), rgba(27, 6, 5, .78)),
-    #4a0d0c;
+  background: #3c0907;
 }
 
 .cover::before {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  content: "";
-}
-
-.cover::before {
-  background:
-    linear-gradient(180deg, rgba(18, 10, 8, .04), rgba(41, 9, 7, .5)),
-    linear-gradient(90deg, rgba(12, 10, 12, .22), transparent 28%, transparent 72%, rgba(12, 10, 12, .22));
+  content: none;
 }
 
 .cover-content {
