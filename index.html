@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Libre+Franklin:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=tabs-featured-3-20260530">
+  <link rel="stylesheet" href="styles.css?v=cozinhas-buffet-20260530">
 </head>
 <body data-theme="self-service">
   <main class="menu-shell">
@@ -45,7 +45,7 @@
           <div class="stamp">Uai</div>
           <div>
             <span>Almoço regional</span>
-            <h3>Comida de panela, mesa farta e tempero de casa</h3>
+            <h3>Comida de panela e tempero de casa</h3>
             <p>Estrutura pensada para buffet no peso ou livre, com pratos mineiros e nordestinos organizados por estações.</p>
           </div>
         </div>
@@ -53,195 +53,70 @@
         <div class="subtabs subtabs--featured" role="tablist" aria-label="Categorias do self-service">
           <button class="subtab subtab--major is-active" type="button" data-target="self-mineira">Mineira</button>
           <button class="subtab subtab--major" type="button" data-target="self-nordestina">Nordestina</button>
-          <button class="subtab subtab--minor" type="button" data-target="buffet-proteinas">Carnes e Proteínas</button>
-          <button class="subtab subtab--minor" type="button" data-target="buffet-bases">Arroz, Feijão e Bases</button>
-          <button class="subtab subtab--minor" type="button" data-target="buffet-guarnicoes">Guarnições Quentes</button>
-          <button class="subtab subtab--minor" type="button" data-target="buffet-saladas">Saladas e Molhos</button>
-          <button class="subtab subtab--minor" type="button" data-target="buffet-acompanhamentos">Extras do Buffet</button>
-        </div>
-
-        <div class="subpanel" id="buffet-proteinas" hidden>
-          <div class="subtabs subtabs--nested" role="tablist" aria-label="Tipos de proteínas do buffet">
-            <button class="subtab is-active" type="button" data-target="proteinas-suina">Suína</button>
-            <button class="subtab" type="button" data-target="proteinas-frango">Frango</button>
-            <button class="subtab" type="button" data-target="proteinas-bovina">Bovina</button>
-            <button class="subtab" type="button" data-target="proteinas-peixes">Peixes</button>
-          </div>
-
-          <div class="subpanel is-active" id="proteinas-suina">
-            <div class="menu-list">
-              <article class="menu-item"><div><span>Mineiro</span><h3>Leitão à pururuca</h3><p>Clássico de mesa mineira, com pele crocante e preparo de almoço especial.</p></div><strong>Buffet</strong></article>
-              <article class="menu-item"><div><span>Suíno</span><h3>Costelinha de porco</h3><p>Costelinha frita ou assada, boa para acompanhar tutu, couve e farofa.</p></div><strong>Buffet</strong></article>
-              <article class="menu-item"><div><span>Crocante</span><h3>Torresmo</h3><p>Item de assinatura mineira para entrada, prato principal ou acompanhamento.</p></div><strong>Buffet</strong></article>
-            </div>
-          </div>
-
-          <div class="subpanel" id="proteinas-frango" hidden>
-            <div class="menu-list">
-              <article class="menu-item"><div><span>Clássico</span><h3>Frango com quiabo</h3><p>Receita tradicional de Minas, servida com molho caseiro e quiabo.</p></div><strong>Buffet</strong></article>
-              <article class="menu-item"><div><span>Panela</span><h3>Frango ensopado</h3><p>Preparo de panela para acompanhar arroz, feijão e angu.</p></div><strong>Buffet</strong></article>
-              <article class="menu-item"><div><span>Do dia</span><h3>Frango assado</h3><p>Opção de ave para o almoço regional, conforme disponibilidade.</p></div><strong>Consulte</strong></article>
-            </div>
-          </div>
-
-          <div class="subpanel" id="proteinas-bovina" hidden>
-            <div class="menu-list">
-              <article class="menu-item"><div><span>Panela</span><h3>Carne de panela</h3><p>Carne cozida lentamente, com molho encorpado e tempero caseiro.</p></div><strong>Buffet</strong></article>
-              <article class="menu-item"><div><span>Mineiro</span><h3>Vaca atolada</h3><p>Carne com mandioca em preparo cremoso, típico de comida de roça.</p></div><strong>Buffet</strong></article>
-              <article class="menu-item"><div><span>Regional</span><h3>Carne de sol acebolada</h3><p>Toque nordestino para equilibrar a proposta mineira da casa.</p></div><strong>Buffet</strong></article>
-            </div>
-          </div>
-
-          <div class="subpanel" id="proteinas-peixes" hidden>
-            <div class="menu-list">
-              <article class="menu-item"><div><span>Leve</span><h3>Peixe ao molho</h3><p>Alternativa para pratos mais leves dentro do self-service.</p></div><strong>Buffet</strong></article>
-              <article class="menu-item"><div><span>Nordeste</span><h3>Moqueca do dia</h3><p>Preparo regional para dias de buffet com frutos do mar.</p></div><strong>Consulte</strong></article>
-            </div>
-          </div>
-        </div>
-
-        <div class="subpanel" id="buffet-bases" hidden>
-          <div class="subtabs subtabs--nested" role="tablist" aria-label="Bases do buffet">
-            <button class="subtab is-active" type="button" data-target="bases-feijoes">Feijões</button>
-            <button class="subtab" type="button" data-target="bases-arroz">Arroz</button>
-            <button class="subtab" type="button" data-target="bases-raizes">Raízes</button>
-          </div>
-
-          <div class="subpanel is-active" id="bases-feijoes">
-            <div class="menu-list">
-              <article class="menu-item"><div><span>Mineiro</span><h3>Feijão tropeiro</h3><p>Feijão com farinha, ovos, cheiro-verde e toque de torresmo.</p></div><strong>Buffet</strong></article>
-              <article class="menu-item"><div><span>Clássico</span><h3>Tutu à mineira</h3><p>Feijão engrossado com farinha, servido com couve e proteína.</p></div><strong>Buffet</strong></article>
-              <article class="menu-item"><div><span>Panela</span><h3>Feijão preto</h3><p>Base brasileira para acompanhar arroz, farofa e carnes.</p></div><strong>Buffet</strong></article>
-            </div>
-          </div>
-
-          <div class="subpanel" id="bases-arroz" hidden>
-            <div class="menu-list">
-              <article class="menu-item"><div><span>Base</span><h3>Arroz branco</h3><p>Base diária para montar o prato do almoço.</p></div><strong>Buffet</strong></article>
-              <article class="menu-item"><div><span>Regional</span><h3>Arroz de forno</h3><p>Opção mais encorpada para dias de buffet especial.</p></div><strong>Consulte</strong></article>
-            </div>
-          </div>
-
-          <div class="subpanel" id="bases-raizes" hidden>
-            <div class="menu-list">
-              <article class="menu-item"><div><span>Mineiro</span><h3>Angu</h3><p>Base de milho cremosa, perfeita com frango com quiabo e molhos.</p></div><strong>Buffet</strong></article>
-              <article class="menu-item"><div><span>Nordeste</span><h3>Macaxeira cozida</h3><p>Raiz regional para acompanhar carne de sol, farofa e vinagrete.</p></div><strong>Buffet</strong></article>
-              <article class="menu-item"><div><span>Roça</span><h3>Canjiquinha</h3><p>Milho quebrado em preparo de panela, comum em almoços mineiros.</p></div><strong>Consulte</strong></article>
-            </div>
-          </div>
-        </div>
-
-        <div class="subpanel" id="buffet-guarnicoes" hidden>
-          <div class="subtabs subtabs--nested" role="tablist" aria-label="Guarnições do buffet">
-            <button class="subtab is-active" type="button" data-target="guarnicoes-quentes">Quentes</button>
-            <button class="subtab" type="button" data-target="guarnicoes-regionais">Regionais</button>
-            <button class="subtab" type="button" data-target="guarnicoes-forno">Forno</button>
-          </div>
-
-          <div class="subpanel is-active" id="guarnicoes-quentes">
-            <div class="menu-list">
-              <article class="menu-item"><div><span>Clássico</span><h3>Couve refogada</h3><p>Companhia obrigatória para tutu, feijão tropeiro e carnes suínas.</p></div><strong>Buffet</strong></article>
-              <article class="menu-item"><div><span>Caseiro</span><h3>Legumes salteados</h3><p>Opção quente para equilibrar pratos mais fortes.</p></div><strong>Buffet</strong></article>
-              <article class="menu-item"><div><span>Panela</span><h3>Purê de batatas</h3><p>Guarnição cremosa para carnes de panela e frango.</p></div><strong>Buffet</strong></article>
-            </div>
-          </div>
-
-          <div class="subpanel" id="guarnicoes-regionais" hidden>
-            <div class="menu-list">
-              <article class="menu-item"><div><span>Nordeste</span><h3>Baião de dois</h3><p>Base regional nordestina para acompanhar carnes e saladas.</p></div><strong>Buffet</strong></article>
-              <article class="menu-item"><div><span>Milho</span><h3>Cuscuz nordestino</h3><p>Item regional para dialogar com a cozinha nordestina da casa.</p></div><strong>Buffet</strong></article>
-              <article class="menu-item"><div><span>Farinha</span><h3>Farofa da casa</h3><p>Farofa temperada para finalizar o prato.</p></div><strong>Buffet</strong></article>
-            </div>
-          </div>
-
-          <div class="subpanel" id="guarnicoes-forno" hidden>
-            <div class="menu-list">
-              <article class="menu-item"><div><span>Forno</span><h3>Macarrão gratinado</h3><p>Guarnição clássica de self-service para acompanhar proteínas.</p></div><strong>Buffet</strong></article>
-              <article class="menu-item"><div><span>Forno</span><h3>Lasanha</h3><p>Opção de massa para completar o buffet quente.</p></div><strong>Consulte</strong></article>
-            </div>
-          </div>
-        </div>
-
-        <div class="subpanel" id="buffet-saladas" hidden>
-          <div class="subtabs subtabs--nested" role="tablist" aria-label="Saladas do buffet">
-            <button class="subtab is-active" type="button" data-target="saladas-folhas">Folhas</button>
-            <button class="subtab" type="button" data-target="saladas-compostas">Compostas</button>
-            <button class="subtab" type="button" data-target="saladas-molhos">Molhos</button>
-          </div>
-
-          <div class="subpanel is-active" id="saladas-folhas">
-            <div class="menu-list">
-              <article class="menu-item"><div><span>Fresco</span><h3>Folhas verdes</h3><p>Seleção leve para abrir o almoço.</p></div><strong>Buffet</strong></article>
-              <article class="menu-item"><div><span>Legumes</span><h3>Tomate, pepino e cenoura</h3><p>Clássicos de self-service para montar salada simples.</p></div><strong>Buffet</strong></article>
-            </div>
-          </div>
-
-          <div class="subpanel" id="saladas-compostas" hidden>
-            <div class="menu-list">
-              <article class="menu-item"><div><span>Clássico</span><h3>Salada de maionese</h3><p>Item tradicional de buffet para acompanhar carnes e arroz.</p></div><strong>Buffet</strong></article>
-              <article class="menu-item"><div><span>Caseira</span><h3>Salpicão</h3><p>Salada fria com textura e cremosidade.</p></div><strong>Buffet</strong></article>
-            </div>
-          </div>
-
-          <div class="subpanel" id="saladas-molhos" hidden>
-            <div class="menu-list">
-              <article class="menu-item"><div><span>Molho</span><h3>Vinagrete</h3><p>Acompanha torresmo, carne de sol, macaxeira e feijão tropeiro.</p></div><strong>Buffet</strong></article>
-              <article class="menu-item"><div><span>Pimenta</span><h3>Geleia de pimenta</h3><p>Contraste agridoce citado por clientes junto dos pratos mineiros.</p></div><strong>Consulte</strong></article>
-            </div>
-          </div>
-        </div>
-
-        <div class="subpanel" id="buffet-acompanhamentos" hidden>
-          <div class="menu-list">
-            <article class="menu-item"><div><span>Entrada</span><h3>Caldinho de feijão</h3><p>Entrada afetiva para abrir o almoço, com cara de comida mineira.</p></div><strong>Buffet</strong></article>
-            <article class="menu-item"><div><span>Queijo</span><h3>Queijo coalho ou minas</h3><p>Complemento para pratos regionais e saladas.</p></div><strong>Consulte</strong></article>
-            <article class="menu-item"><div><span>Extra</span><h3>Ovo frito</h3><p>Clássico de self-service para finalizar o prato.</p></div><strong>Consulte</strong></article>
-          </div>
         </div>
 
         <div class="subpanel is-active" id="self-mineira">
           <div class="subtabs subtabs--nested" role="tablist" aria-label="Categorias mineiras">
-            <button class="subtab is-active" type="button" data-target="mineira-panela">Panela</button>
-            <button class="subtab" type="button" data-target="mineira-porco">Porco</button>
-            <button class="subtab" type="button" data-target="mineira-milho">Milho e Feijão</button>
+            <button class="subtab is-active" type="button" data-target="mineira-proteinas">Proteínas Mineiras</button>
+            <button class="subtab" type="button" data-target="mineira-bases">Bases Mineiras</button>
+            <button class="subtab" type="button" data-target="mineira-guarnicoes">Guarnições Mineiras</button>
+            <button class="subtab" type="button" data-target="mineira-saladas">Saladas e Extras</button>
           </div>
 
-          <div class="subpanel is-active" id="mineira-panela">
+          <div class="subpanel is-active" id="mineira-proteinas">
             <div class="menu-list">
               <article class="menu-item"><div><span>Panela</span><h3>Frango com quiabo</h3><p>Um dos pratos mais reconhecidos da culinária mineira.</p></div><strong>Buffet</strong></article>
               <article class="menu-item"><div><span>Roça</span><h3>Vaca atolada</h3><p>Carne cozida com mandioca, em preparo encorpado.</p></div><strong>Buffet</strong></article>
               <article class="menu-item"><div><span>Caseiro</span><h3>Carne de panela</h3><p>Molho de panela e tempero de almoço familiar.</p></div><strong>Buffet</strong></article>
-            </div>
-          </div>
-
-          <div class="subpanel" id="mineira-porco" hidden>
-            <div class="menu-list">
               <article class="menu-item"><div><span>Suíno</span><h3>Leitão à pururuca</h3><p>Clássico crocante para dias especiais.</p></div><strong>Consulte</strong></article>
               <article class="menu-item"><div><span>Crocante</span><h3>Torresmo</h3><p>Presença obrigatória para o espírito mineiro do buffet.</p></div><strong>Buffet</strong></article>
               <article class="menu-item"><div><span>Suíno</span><h3>Costelinha</h3><p>Combina com tutu, couve e arroz branco.</p></div><strong>Buffet</strong></article>
             </div>
           </div>
 
-          <div class="subpanel" id="mineira-milho" hidden>
+          <div class="subpanel" id="mineira-bases" hidden>
             <div class="menu-list">
               <article class="menu-item"><div><span>Feijão</span><h3>Tutu à mineira</h3><p>Feijão engrossado, servido com guarnições clássicas.</p></div><strong>Buffet</strong></article>
               <article class="menu-item"><div><span>Feijão</span><h3>Feijão tropeiro</h3><p>Mistura de feijão, farinha, ovos e temperos.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Base</span><h3>Arroz branco</h3><p>Base diária para montar o prato do almoço.</p></div><strong>Buffet</strong></article>
               <article class="menu-item"><div><span>Milho</span><h3>Angu</h3><p>Base cremosa para pratos com molho.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Roça</span><h3>Canjiquinha</h3><p>Milho quebrado em preparo de panela, comum em almoços mineiros.</p></div><strong>Consulte</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="mineira-guarnicoes" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Clássico</span><h3>Couve refogada</h3><p>Companhia obrigatória para tutu, feijão tropeiro e carnes suínas.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Caseiro</span><h3>Legumes salteados</h3><p>Opção quente para equilibrar pratos mais fortes.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Panela</span><h3>Purê de batatas</h3><p>Guarnição cremosa para carnes de panela e frango.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Forno</span><h3>Macarrão gratinado</h3><p>Guarnição clássica de self-service para acompanhar proteínas.</p></div><strong>Buffet</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="mineira-saladas" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Fresco</span><h3>Folhas verdes</h3><p>Seleção leve para abrir o almoço.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Clássico</span><h3>Salada de maionese</h3><p>Item tradicional de buffet para acompanhar carnes e arroz.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Entrada</span><h3>Caldinho de feijão</h3><p>Entrada afetiva para abrir o almoço, com cara de comida mineira.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Pimenta</span><h3>Geleia de pimenta</h3><p>Contraste agridoce para carnes, queijos e preparos de panela.</p></div><strong>Consulte</strong></article>
             </div>
           </div>
         </div>
 
         <div class="subpanel" id="self-nordestina" hidden>
           <div class="subtabs subtabs--nested" role="tablist" aria-label="Categorias nordestinas">
-            <button class="subtab is-active" type="button" data-target="nordeste-carnes">Carnes</button>
-            <button class="subtab" type="button" data-target="nordeste-bases">Bases</button>
-            <button class="subtab" type="button" data-target="nordeste-acompanhamentos">Acompanhamentos</button>
+            <button class="subtab is-active" type="button" data-target="nordeste-proteinas">Proteínas Nordestinas</button>
+            <button class="subtab" type="button" data-target="nordeste-bases">Bases Nordestinas</button>
+            <button class="subtab" type="button" data-target="nordeste-guarnicoes">Guarnições Nordestinas</button>
+            <button class="subtab" type="button" data-target="nordeste-saladas">Saladas e Extras</button>
           </div>
 
-          <div class="subpanel is-active" id="nordeste-carnes">
+          <div class="subpanel is-active" id="nordeste-proteinas">
             <div class="menu-list">
               <article class="menu-item"><div><span>Regional</span><h3>Carne de sol acebolada</h3><p>Item nordestino para acompanhar macaxeira, feijão e farofa.</p></div><strong>Buffet</strong></article>
               <article class="menu-item"><div><span>Panela</span><h3>Charque desfiada</h3><p>Boa para compor pratos com arroz, baião e saladas.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Peixe</span><h3>Peixe ao molho</h3><p>Alternativa leve dentro do buffet regional.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Mar</span><h3>Moqueca do dia</h3><p>Preparo nordestino para dias com frutos do mar.</p></div><strong>Consulte</strong></article>
             </div>
           </div>
 
@@ -253,10 +128,21 @@
             </div>
           </div>
 
-          <div class="subpanel" id="nordeste-acompanhamentos" hidden>
+          <div class="subpanel" id="nordeste-guarnicoes" hidden>
             <div class="menu-list">
+              <article class="menu-item"><div><span>Forno</span><h3>Lasanha</h3><p>Opção quente para completar a linha de buffet.</p></div><strong>Consulte</strong></article>
+              <article class="menu-item"><div><span>Milho</span><h3>Milho refogado</h3><p>Guarnição simples para acompanhar carnes regionais.</p></div><strong>Buffet</strong></article>
               <article class="menu-item"><div><span>Farinha</span><h3>Farofa</h3><p>Acompanhamento para pratos mineiros e nordestinos.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Raiz</span><h3>Macaxeira na manteiga</h3><p>Clássico regional para carne de sol e charque.</p></div><strong>Buffet</strong></article>
+            </div>
+          </div>
+
+          <div class="subpanel" id="nordeste-saladas" hidden>
+            <div class="menu-list">
+              <article class="menu-item"><div><span>Legumes</span><h3>Tomate, pepino e cenoura</h3><p>Clássicos de self-service para montar salada simples.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Caseira</span><h3>Salpicão</h3><p>Salada fria com textura e cremosidade.</p></div><strong>Buffet</strong></article>
               <article class="menu-item"><div><span>Molho</span><h3>Vinagrete</h3><p>Finaliza carnes, macaxeira e baião de dois.</p></div><strong>Buffet</strong></article>
+              <article class="menu-item"><div><span>Queijo</span><h3>Queijo coalho ou minas</h3><p>Complemento para pratos regionais e saladas.</p></div><strong>Consulte</strong></article>
             </div>
           </div>
         </div>
