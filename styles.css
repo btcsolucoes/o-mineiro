@@ -919,7 +919,7 @@ body.nav-is-fixed .tab-panels {
 }
 
 .panel {
-  width: min(860px, calc(100% - 48px));
+  width: min(860px, calc(100vw - 48px));
   scroll-margin-top: 94px;
 }
 
@@ -942,5 +942,53 @@ body.nav-is-fixed .tab-panels {
 
   .tab b { font-size: .68rem; }
 
-  .panel { width: calc(100% - 24px); }
+  .panel { width: calc(100vw - 24px); }
+}
+
+/* QrStack production refinements */
+.tab-panels {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: clamp(40px, 6vw, 72px);
+  padding-top: clamp(28px, 4vw, 42px);
+}
+
+body.nav-is-fixed .tab-panels {
+  padding-top: calc(var(--dock-height, 80px) + clamp(28px, 4vw, 42px));
+}
+
+.panel { margin-top: 0; }
+
+.subtabs,
+.subtabs--featured,
+.subtabs--nested {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  grid-template-columns: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-padding-inline: 8px;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.subtabs::-webkit-scrollbar { display: none; }
+
+.subtab,
+.subtabs--featured .subtab--major,
+.subtabs--nested .subtab {
+  flex: 0 0 auto;
+  min-width: clamp(116px, 31vw, 178px);
+  max-width: 224px;
+  padding-inline: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-wrap: normal;
+}
+
+.subtabs--featured .subtab--major {
+  min-height: 68px;
 }
